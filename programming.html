@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>programming.html</title>
+    <style>
+    body {background-image: url('ch5.jpg');
+        background-repeat: repeat;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;}
+    table.main {background-color: #3f200bf8;
+        width: 660px;
+        margin: auto;}
+    table.navbar {background-color: #806746f8;
+        width: 100%;}
+    table.navbar td {text-align: center;}
+    table.navbar a {text-decoration: none;
+        color: #d3cece;
+        display: block;
+        padding: 10px 20px}
+    table.navbar a:hover {background-color: #181715;}
+    table.content {background-color: #e0efed;
+        width: 100%;
+        margin: auto;}
+    h1 {text-align: center;}
+</style>
+    </head>
+        <body>
+            <table class="main" border="3">
+                <tr>
+            <td>
+        <table class="navbar">
+    <tr>
+<td><a href="index.html">Home</a></td>
+    <td><a href="https://www.pvcc.edu">PVCC</a></td>
+    <td><a href="https://www.w3schools.com/html/">W3 Schools</a></td>
+    <td><a href="contactus.html">Contact Us</a></td>
+    </tr>
+</table>
+    <table class="content" border="2">
+        <tr>
+            <td colspan="3">
+                <h1>Chapter 5: Programming & Software Testing</h1>
+             </td>
+         </tr>
+        <tr>
+            <td>Phases of computer program development:
+                <ul>
+                    <li>Phase 1: Understand the problem</li>
+                    <li>phase 2: Design an algorithm to solvee the problem</li>
+                    <li>Phase 3: Write the program code in appropriate language based on the algorithm</li>
+                    <li>Phase 4: Enter the program and save</li>
+                    <li>Phase 5: Execute the program</li>
+                    <li>Phase 6: Test the program, find errors and debug, then retest</li>
+                    <li>Phase 7: Document and evaluate the program</li>
+                </ul>
+            </td>
+        <tr>
+    <td>Programming Structures:<ul>
+        <li>Sequential Structure: Top-dowm execution</li>
+        <li>decision structures: if/then/else</li>
+        <li>Iterative (Looping): While loop: continue looping as
+            long something is true. Repeat/until loop: continue looping
+            until something is true. For loop: loop a givenn number of times</li>
+        <li>Recursive Structure: Repeat a set of instructios as a subtask of itself.
+            Repeatation continues until: degenerative case, which is a termination condition,
+            it met (degenerative case is also called a "base case")</li>
+        </ul>
+    </td>
+    <tr>
+        <td>Two Calssic Programming/Database Problems<ul>
+            <li>Sorting: Descending order/Ascending order. Sorting numbers. Sorting strings
+                (in accordance with ASCII values). Searching: Find specific data that meet a 
+                certain criteria. Filters: temporary search. Queries: search criteria are saved so
+                they don't have to be recreated.nTwo popular search techniques:
+                Sequential search: search from top to bottom or bottom to top, one item at a time.
+                Binary search: only works if data is SORTED first, start in the middle, then go to half of that, etc.
+            </li>
+        </ul>
+    </td>
+        <tr>
+            <td>Two Classic Program Goals:<ul>
+                <li>Efficiency: Program takes minimal time and/or resources.</li>
+                <li>Corrections: Program runs in expected ways and works for all expected conditions.</li>
+            </ul> 
+        </td>
+    </tr>
+        <tr>
+            <td>
+            <h1>Software Testing and Verification</h1>
+        </td>
+    </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>Acceptance Testing: Acceptance testing is a quality assurance (QA)
+                        process that determines to what degree an application meets end users' approval.</li>
+                    <li>Integration Testing: Is a type of software testing in which the different units
+                        modules or components of a software application are tested as a combined entity.</li>
+                    <li>Unit Testing: 
+                        Unit testing is a software development process in which the smallest testable
+                        parts of an application, called units, are individually scrutinized for proper operation.</li>
+                    <li>Functional Testing: Functional testing is a type of testing that seeks to establish whether
+                        each application feature works as per the software requirements. Each function is compared to
+                        the corresponding requirement to ascertain whether its output is consistent
+                        with the end user's expectations.</li>
+                    <li>Performace Testing: 
+                        What is performance testing and how does it work ...
+                        Performance testing is a testing measure that evaluates the speed, responsiveness and
+                        stability of a computer, network, software program or device under a workload.</li>
+                    <li>Regression Testing: Regression testing is a type of software testing conducted after
+                        a code update to ensure that the update introduced no new bugs.</li>
+                    <li>Stress Testing: Stress testing is software testing used to determine how an
+                        application or system behaves when under extreme levels of stress.</li>
+                    <li>Usability Testing: 
+                        What is Usability Testing? — updated 2023 | IxDF
+                        Usability testing is the practice of testing how easy a design is to use with a group
+                        of representative users. It usually involves observing users as they attempt to complete
+                        tasks and can be done for different types of designs.</li>
+                </ul>
+            </td>
+        </tr> 
+    <tr>
+        <td>Software Testing is done to detect: <ul>
+            <li>Architectural flaws</li>
+            <li>Poor design decisions</li>
+            <li>Innvalid or incorrect functionality</li>
+            <li>Security vulnerabilities</li>
+            <li>Scalability issues</li>
+        </ul>
+    </td>
+        </tr>
+        <tr>
+            <td>Testing Best practices: <ul>
+                <li>Continous Testing:  It is part of a DevOps approach-where
+                    development and operations collaborate over the entire product life cycle.</li>
+                <li>Configuration Managment: Organizations centrally maintain test assets and track
+                    what software builds to test. Teams gain access to assets such as code, requirements,
+                    design documents, models, test scripts and test results.</li>
+                <li>Service Virtualization: Service virtualization simulates the services and systems that
+                    are missing or not yet completed, enabling teams to reduce dependencies and test sooner.
+                    They can reuse, deploy and change a configuration to test different scenarios without
+                    having to modify the original environment.</li>
+                <li>Defect or "bug tracking": Monitoring defects is important to both testing and development
+                    teams for measuring and improving quality. Automated tools allow teams to track defects,
+                    measure their scope and impact, and uncover related issues.</li>
+                <li>Metrics and Reporting: Reporting and analytics enable team members to share status,
+                    goals and test results. Advanced tools integrate project metrics and present results in a
+                    dashboard. Teams quickly see the overall health of a project and can monitor
+                    relationships between test, development and other project elements.</li>
+                <li> <a href="https://www.ibm.com/topics/software-testing">IBM What is software testing?</a></li>
+            </ul>
+        </td>
+    </tr>
+
+    
+
+
+
+        
