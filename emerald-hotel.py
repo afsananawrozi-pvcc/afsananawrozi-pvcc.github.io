@@ -46,7 +46,6 @@ def perform_calculations():
 
             if room_type =="SR":
                 subtotal = ROOM_RATES[0] * num_nights
-#STUDENTS: COMPLETE THESE elif AND else statements
             elif room_type == "DR":
                 subtotal = ROOM_RATES[1] * num_nights
             elif room_type == "SU":
@@ -55,16 +54,11 @@ def perform_calculations():
             else:
                 print(f"Invalid room type for guest {i+1}: {room_type}")
                 subtotal = 0 
-                
-                
-#STUDENTS: COMPLETE THESE CALCULATIONS
 
             sales_tax  = subtotal * TAX_RATES[0]
             occupancy_tax = subtotal * TAX_RATES[1]
             total     = subtotal + sales_tax + occupancy_tax
-            grandtotal += total
-        
-#STUDENTS: ADD THE REST OF THE append statements after this one       
+            grandtotal += total      
             guest[i].append(subtotal)
             guest[i].append(sales_tax)
             guest[i].append(occupancy_tax)
